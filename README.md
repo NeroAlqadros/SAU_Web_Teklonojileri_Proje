@@ -35,6 +35,9 @@
     - Form elemanları kullanılmalı
     - Kontrol işlemleri javascript ile yapılmalı
     - Gönderilen form bilgileri başka bir sayfada görüntülenmeli
+    
+  ##### İlgi Alanlarım  Sayfası
+    - Harry Potter film serisinde karakterleri javascript kullanarak gösterilicek 
 
 ###    Proje Süreci
   - Projenin 4 farklı versiyonunu oluşturmayı planlıyorum.
