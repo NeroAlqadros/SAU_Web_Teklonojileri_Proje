@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boostrap linki  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <style>
+        /* -------------------------- */
+        
+        .mySlides {
+            display: none
+        }
+        
+        img {
+            vertical-align: middle;
+            /* border: red solid 2px; */
+            position: relative;
+            height: 450px;
+        }
+        
+        .slideshow-container {
+            width: 1100px;
+            height: 450px;
+            position: relative;
+            /* border: red solid 2px; */
+            margin: auto;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            font-weight: bold;
+            font-size: 22px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            z-index: 99;
+            background-color: #f3f2f2;
+            opacity: 0.4;
+            color: rgb(80, 52, 52) !important;
+        }
+        /* Position the "next button" to the right */
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        
+        .prev:hover,
+        .next:hover {
+            opacity: 0.8;
+        }
+        /* Caption text */
+        
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        /* Number text (1/3 etc) */
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        /* The dots/bullets/indicators */
+        
+        .dots-wrapper {
+            /* border: red solid 2px; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 14px;
+        }
+        
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        /* On smaller screens, decrease text size */
+        
+        @media only screen and (max-width: 300px) {
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+    <title>ŞEHRİM SAYFASI </title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="hakkimda.html">Hasan Çakır </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Giriş Yap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="hakkimda.html">Hakkımda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="ozgecmis.html">Özgeçmiş</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " href="ilgiAlanlarim.html">İlgi Alanlarım</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="sehrim.html">Şehrim</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="takimim.html">Takımım</a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br><br><br>
+    <div class="container">
+        <div class="jumbotron  bg-light text-dark text-center ">
+
+            <h2 class="display-6"><strong>BALIKESİR    </strong></h2>
+            <hr>
+
+        </div>
+        <div class="row">
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <a href="#ataturk-parki">
+                        <img src="./Images/atatürkParkı1.jpg" alt="atatürk Parkı" height="440" width="100%">
+                    </a>
+
+                    <div class="text"> Atatürk Parkı</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <a href="#değirmen_Bogazi_tabiat_parki">
+                        <img src="./Images/degirmen_bogazı2.jpeg" alt="degirmen-bogazı" height="440" width="100%">
+                    </a>
+
+                    <div class="text"> Degirmen Bogazı </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 /5 </div>
+                    <a href="#kuvayi_milliye">
+                        <img src="./Images/kuvayiMilliyeMüzesi1.jpg" alt="kuvayimilliyeMüzesi" height="440" width="100%">
+
+                    </a>
+
+                    <div class="text"> Kuvayi Milliye Müzesi</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+
+                    <a href="#saat-kulesi">
+                        <img src="./Images/saatKulesi2.jpg" alt="saatKulesi" height="440" width="100%">
+                    </a>
+
+                    <div class="text"> Balıkesir Saat Kulesi </div>
+                </div>
+
+
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+
+
+            <br>
+
+            <div class="dots-wrapper ">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 alert alert-light">
+                <h2><strong>Nüfus</strong></h2>
+                <p>Balıkesir nüfusu bir önceki yıla göre 10.325 artmıştır. Balıkesir nüfusu 2021 yılına göre 1.250.610'dir. Bu nüfus, 625.527 erkek ve 625.083 kadından oluşmaktadır. Yüzde olarak ise: %50,02 erkek, %49,98 kadındır..</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col-lg-12 col-md-12 alert alert-light">
+                <h2><strong>İklim</strong></h2>
+                <p>
+                    Balıkesir'de Marmara, Akdeniz ve kara ikliminin, te'siri görüldüğünden, ilin bir bölgesindeki bitkiler, diğer bölgesinde görülmez. Yüzölçümünün yüzde 30'u (650 bin hektar)ormanlıktır. Ormanlar daha çok Dursunbey,Sındırgı, Edremit, Burhaniye ve Balya bölgesinde
+                    zengindir. İlin % 32'si mer'a ve çayırlıktır. Arazinin % 23'ü ekime müsaittir. % 15'i ise zeytinlik, sebze ve meyve bahçesidir. Ege kıyılarında 300 m yüksekliğe kadar makilere rastlanır. Edremit bölgesi ise 500 metreye kadar zeytinliklerle
+                    kaplıdır. Daha yukarılarda kara ve kızılağaç ormanları vardır.
+                </p>
+
+                <p>
+
+                    Balıkesir'de üç iklim bir arada görülür. Ege kıyılarında Akdeniz, kuzeyde Marmara ve iç bölgelerde kara iklimi hüküm sürer. Kıyılarda yaz ve kış arasındaki ısı farkı azdır. İç kısımlarda ise bu fark büyüktür. Dağlık doğu bölgede kışlar sert ve yazlar
+                    serin geçer. Senelik yağış miktarı 540-740 mm arasındadır.
+
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 alert alert-light">
+                <h2><strong>Tarihçe</strong></h2>
+                <p>Özellikle Yunanistan tarafından olması, Çanakkale’ye komşu olması ve Ege Bölgesinde olması sebebiyle eski bir tarihe sahip olan Balıkesir ile Türkiye’nin tarih başkenti illerimizden birisidir. Bir çok medeniyete ev sahipliği yapan Balıkesir’in
+                    bilindik tarihi M.Ö. 3000 yıllarına kadar gitmektedir. Balıkesir ili genelindeki pekçok höyük, mağara ve düz yerleşim yerlerinde yapılan araştırmalarda bu topraklara M.Ö. 8000-3000 yılları arası yerleşildiği ortaya çıkmıştır. Havran’a
+                    8 km. mesafedeki İnboğazı mağaralarında Paleolitik, Neolitik ve Kalkolitik devirlerinden kalma kalıntılar bulunmuştur. Babaköy (Başpınar) kazılarında, Yortan mezarlığında, Ayvalık Dikili yolu üzerindeki Kaymak Tepe’de Bakır Çağı’na
+                    ait kalıntılar ve yerleşim yerleri bulunmuştur. Bu bölgede ilk defa adı geçen şehir Agiros (Achiraus)’dur. Anadolu Selçuklu Devleti’nin yıkılmasından sonra bölgede Karesi Beyliği kurulmuş, ardından bölge Osmanlı Devleti’nin eline geçmiştir.</p>
+                <p>
+                    Balıkesir ilinin bulunduğu bölgenin adı eski çağlarda Misya’dır. Bu kelimenin Lidya dilindeki anlamı Kayın Ağacı ‘dır. Bölgenin sınırları zamanla çeşitli değişikliklere uğramış olup, kuzeyde Marmara Denizi, batıda Çanakkale Boğazı ve Ege Denizi, doğuda
+                    Atranos Çayı ve güneyde de Lidya ile çevrilmiştir. Keşiş Dağından itibaren Marmara Denizi sahilini takiben Çanakkale Boğazı’na kadar olan kısıma Küçük Misya, geri kalan kısma ise Büyük Misya denilmiştir. Büyük Misya; Pergam (Bergama),
+                    Adramitiyum (Edremit), Arjiza (Balya-Pazarköy), Assos (Behramkale), Teruvad (Truvada), Gargar, Antandos (Avcılar civarı), Belodos (Dursunbey) ve Adriyanatere (Balıkesir) şehirlerinden oluşmaktadır. Küçük Misya ise Sizik (Belkız), Lâmpesak
+                    (Lapseki), Perkot (Bergoz), Abidus, Milotopolis (Mihaliç), Apoloni, Periyapos (Kara Biga), Pemaninos (Eski Manyas), Artemea (Gönen), Zeleya (Sarıköy), Artas (Erdek) ve Panormos (Bandırma) şehirlerinden oluşmaktadır.
+                </p>
+
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 alert alert-light">
+                <h2><strong>Gezilecek Yerler</strong></h2>
+                <br><br>
+                <h4 id="değirmen_Bogazi_tabiat_parki"><strong> Değirmen Boğazı Tabiat Parkı</strong></h2>
+                    <p>
+                        Değirmen Boğazı Tabiat Parkı; piknik alanı (toplam alanı) 250 hektar olan sahada kır gazinosu, büfe, çocuk oyun alanları, basketbol sahası ve otopark bulunmakta ve hafta sonları yerli halka hizmet eden sakin, temiz bir havaya sahip mesire yeridir. Piknik
+                        alanı çam, servi, söğüt, gibi 52 tür ağacı bünyesinde bulundurmaktadır.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12">
+                            <img src="./Images/degirmen_bogazı1.jpeg" class="w-100 h-100" id="degirmen_bogazı1">
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <img src="./Images/degirmen_bogazı2.jpeg" class="w-100 h-100" id="degirmen_bogazı2">
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <img src="./Images/degirmen_bogazı3.jpeg" class="w-100 h-100" id="degirmen_bogazı3">
+                        </div>
+                    </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 alert alert-light">
+                <h4 id="kuvayi_milliye"><strong> Kuvayi Milliye Müzesi </strong></h2>
+                    <p>Millî Mücadele yıllarında karargâh olarak kullanılan bina, 1947-1988 yılları arasında belediye binası olarak hizmet vermiştir. 1987 yılında müze müdürlüğünün kurulmasından sonra yenileme çalışmalarına hız verilmiş ve eser toplama çalışmaları
+                        bitirildikten sonra bina Balıkesir Kuvayi Milliye Müzesi olarak 6 Eylül 1996 tarihinde hizmete açılmıştır. <br> İki kattan oluşan Kuva-yi Milliye Müzesi'nin 120 metrekarelik zemin katında Balıkesir'de Kuva-yi Milliye'nin kurulmasına
+                        öncülük etmiş 41 kişinin aldıkları yazılı kararlar, kongrenin kararları, bu kahramanların kişisel eşyaları, fotoğrafları ile Mustafa Kemal Atatürk ile eşi Latife Hanım’ın balmumu heykelleri sergilenmektedir.
+                        <br> Müzenin ikinci katında ise Balıkesir'de ortaya çıkan arkeolojik ve etnografik eserlere yer verilmektedir.
+                    </p>
+
+
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12">
+                            <img src="./Images/kuvayiMilliyeMüzesi1.jpg" class="w-100 h-100" id="kuvayiMilliyeMüzesi1">
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <img src="./Images/kuvayiMilliyeMüzesi2.jpg" class="w-100 h-100" id="kuvayiMilliyeMüzesi2">
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <img src="./Images/kuvayiMilliyeMüzesi3.jpg" class="w-100 h-100" id="kuvayiMilliyeMüzesi3">
+                        </div>
+                    </div>
+
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 alert alert-light">
+                <h4 id="ataturk-parki"><strong>Balıkesir Atatürk Parkı </strong></h2>
+                    <p> Tarihi Atatürk Parkı 2006 yılında Balıkesir Belediyesi tarafından yenilenerek Nisan 2008 tarihinde yeniden halka açılmıştır. Parkta yaklaşık 3,5 dönüm büyüklüğünde yapay bir göl, gölün kenarında restoran ve seyir terası ile cafeterya,
+                        çay bahçesi, modern çocuk oyun grupları gezinti ve yürüyüş alanları, bisiklet parkuru, küçük şelaleler ve kaya bahçesi gibi dinlenme ve eğlence amaçlı üniteler yer almaktadır.</p>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12">
+                            <img src="./Images/atatürkParkı1.jpg" class="w-100 h-100" id="atatürkParkı1">
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <img src="./Images/atatürkParkı2.jpg" class="w-100 h-100" id="atatürkParkı2">
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <img src="./Images/atatürkParkı3.jpg" class="w-100 h-100" id="atatürkParkı3">
+                        </div>
+                    </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 alert alert-light">
+                <h4 id="saat-kulesi">Balıkesir Saat Kulesi </h2>
+                    <p>
+                        Saat Kulesi 1829 yılında Girit’li Mehmet Paşa tarafından İstanbul Galata Kulesi’nin benzeri olarak silindir şeklinde yaptırılmıştır. 1897 yılındaki deprem nedeniyle yıkılınca, 1901 yılında bugünkü şekliyle yeniden yaptırılmıştır. Kare prizma şeklindeki
+                        bina, beyaz kesme taş ile yapılmış ve kabartma işçiliklerle de süslü hale getirilmiştir. En üst kat kubbe ile örtülmüş ve büyük bir çan eklenmiştir. Buranın hemen altındaki katta ise dört yöne de birer saat konmuştur.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12">
+                            <img src="./Images/saatKulesi1.jpg" class="w-100 " height="310" id="saatKulesi1">
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <img src="./Images/saatKulesi2.jpg" class="w-100" height="310" id="saatKulesi2">
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <img src="./Images/saatKulesi3.jpg" class="w-100 " height="310" id="saatKulesi3">
+                        </div>
+                    </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+
+
+
+
+</body>
+
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        slides[slideIndex - 1].classList.remove("fade")
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+</html>
