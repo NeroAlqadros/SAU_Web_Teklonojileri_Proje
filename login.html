@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boostrap linki  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Giriş sayfası </title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="hakkimda.html">Hasan Çakır </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link  text-danger" href="login.html">Giriş Yap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="hakkimda.html">Hakkımda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="ilgiAlanlarim.html">İlgi Alanlarım</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sehrim.html">Şehrim</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="takimim.html">Takımım</a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br><br><br><br>
+
+    <main role="main">
+        <div class="jumbotron  bg-light text-dark text-center ">
+
+            <h2 class="display-5 ">Giriş Ekranı</h2>
+
+        </div>
+        <div class="container">
+
+            <form action="login.php" method="POST" style="width: 500px; margin:20px auto ;">
+                <div class="form-group">
+                    <label for="id">Kullanici Adi</label>
+                    <input type="text" name="username" id="username" class="form-control p-3 mt-2" placeholder="Kullanici Adi">
+                </div><br>
+                <div class="form-group">
+                    <label for="password">Şifre</label>
+                    <input type="password" name="password" id="password" class="form-control p-3 mt-2" placeholder="Parola">
+                </div><br><br>
+                <button class="btn btn btn-danger d-block w-100 p-3 btn" type="button" onclick="kontrol()">Giriş</button>
+                <br><br><br>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+<script>
+    function kontrol() {
+
+        var button = document.querySelector(".btn");
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (password.length == 0 || username.length == 0) {
+            alert("Bütün Alanları Doldurmak Zorunludur.!");
+        } else {
+            button.setAttribute('type', 'submit')
+        }
+
+
+    }
+</script>
+
+</html>
